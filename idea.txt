@@ -1,0 +1,23 @@
+INPUT: we have p(1) p(2) ... p(n): n numbers in total
+OUTPUT: 0 or 1
+
+
+START
+
+if there is no new number: RETURN 1
+otherwise the new number -> p(1)
+
+if p(1) < max: (A must not be empty for sure)
+  get front and back of A -> A_front and A_back
+
+otherwise 
+  if A is empty: (it is NULL for sure)
+    F1(p)
+  otherwise A is not empty:
+
+
+
+
+
+
+
