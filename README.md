@@ -10,8 +10,8 @@
 * deque5: a single case debug version of deque4, currently a counterexample when n = 8
 
 ### subgoal
-* give a thorough and formal description of the algorithm in deque3
-* demonstate the problem of deque3
+* give a thorough and formal description of the algorithm in deque4
+* demonstate the unsolved subproblem of deque4
 * and propose a possilbe solution
 
 ### goal
