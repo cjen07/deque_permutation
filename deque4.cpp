@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <list>
 #include <vector>
 #include <algorithm>
@@ -243,7 +244,7 @@ bool F2(int p){
     }
   }
   int z = F20(p);
-  if(z == 1){
+  if(z == 0){
     A.push_back(n+1);
     it2 = --A.end();
     for(int i = 0; i < C.size(); i++){
@@ -288,7 +289,7 @@ bool F2(int p){
     A.erase(it2);
     return F();
   }
-  else if(z == 0){
+  else if(z == 1){
     A.push_front(n+1);
     it2 = A.begin();
     for(int i = 0; i < C.size(); i++){
@@ -358,6 +359,8 @@ bool F(){
 }
 
 int main(){
+  ofstream myfile;
+  myfile.open("w");
   int total = 0;
   cin >> n;
   a = new int[n];
@@ -376,8 +379,8 @@ int main(){
     }
 
     if(F() == 0){
-      for(int i = 0; i < n; i++) cout << a[i] << " ";
-      cout << endl;
+      for(int i = 0; i < n; i++) myfile << a[i] << " ";
+      myfile << endl;
       // cout << "No" << endl;
       total++;
     }

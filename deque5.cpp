@@ -7,8 +7,8 @@ using namespace std;
 list<int> A;
 vector<bool> B;
 vector<list<int>::iterator> I;
-int n = 5;
-int a[5] = {3, 1, 5, 4, 2};
+int n = 8;
+int a[8] = {3, 1, 6, 4, 8, 5, 2, 7};
 int k, base, mx;
 list<int>::iterator it;
 list<int>::iterator it2;
@@ -283,7 +283,7 @@ bool F2(int p){
   int z = F20(p);
   cout << "z: " << z << endl;
   cout << "here 1" << endl;
-  if(z == 1){
+  if(z == 0){
     A.push_back(n+1);
     it2 = --A.end();
     for(int i = 0; i < C.size(); i++){
@@ -346,7 +346,7 @@ bool F2(int p){
     A.erase(it2);
     return F();
   }
-  else if(z == 0){
+  else if(z == 1){
     A.push_front(n+1);
     it2 = A.begin();
     for(int i = 0; i < C.size(); i++){

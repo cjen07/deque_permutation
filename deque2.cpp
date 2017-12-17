@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <algorithm>
 #include <deque>
 using namespace std;
@@ -86,6 +87,8 @@ bool f(deque<int> d0, deque<int> d1, int x, int y){
 
 int main(){
   int total = 0;
+  ofstream myfile;
+  myfile.open("c");
   int n, m;
   cin >> n;
   int *a = new int[n];
@@ -96,8 +99,8 @@ int main(){
     for(int i = 0; i < n; i++) d0.push_back(a[i]);
     if(f(d0, d1, 0, 1) == 0){
       total++;
-      for(int i = 0; i < n; i++) cout << a[i] << " ";
-      cout << endl;
+      for(int i = 0; i < n; i++) myfile << a[i] << " ";
+      myfile << endl;
     }
   }while(next_permutation(a, a+n));
   cout << "total: " << total << endl;
