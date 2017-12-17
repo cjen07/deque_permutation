@@ -8,6 +8,7 @@
   and save output to file 
 * deque4: (output similar to deque2) save output to file version of a new algorithm (before 20171217)
 * deque5: a single case debug version of deque4, currently a counterexample when n = 8
+* doc4: frame of the documents on deque4 
 
 ### subgoal
 * give a thorough and formal description of the algorithm in deque4

@@ -1,0 +1,39 @@
+documents on deque4
+
+main:
+  n is the largest number in the given sequence
+  a is the current permutation
+  loop
+    k: int: 0: next index to process in a 
+    mx: int: 0: current the biggest number
+    it: list<int>::iterator: A.end()
+    A: list<int>: empty: store the current deque
+    B: vector<bool>: false*n: store element to be removed
+    I: vector<list<int>::iterator>: [A.end()]
+    call F()
+
+F():
+  if there is a new number(p) to process
+    if p < mx, then return F0(p)
+    else if A is empty, then return F1(p)
+    else return F2(p)
+  else
+    return true
+
+F0(p):
+  if you can remove p in a
+    save the changes by helper function F01
+  else
+    return false
+
+F1(p):
+  get the assending subseqence
+  and save it to A and B
+  by helper function F10, F101, F102
+
+F2(p): (to fix)
+  get the assending subseqence(s)
+  get the next value(v)
+  a way to handle s and v
+
+  
