@@ -88,7 +88,7 @@ bool f(deque<int> d0, deque<int> d1, int x, int y){
 int main(){
   int total = 0;
   ofstream myfile;
-  myfile.open("c");
+  myfile.open("data/c");
   int n, m;
   cin >> n;
   int *a = new int[n];

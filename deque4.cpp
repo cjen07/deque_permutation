@@ -360,7 +360,7 @@ bool F(){
 
 int main(){
   ofstream myfile;
-  myfile.open("w");
+  myfile.open("data/w");
   int total = 0;
   cin >> n;
   a = new int[n];
